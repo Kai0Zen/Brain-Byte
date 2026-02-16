@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <style>
+*{
+padding: 0;
+margin: 0;
+}
+.hero{
+     height: 100vh;
+    width:100%;
+    background-color: #edf2fc;
+    font-family: sans-serif;
+    position: relative;
+}
+nav{
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    cursor: pointer;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+ nav ul li a{
+    font-size: 1.16rem;
+    text-decoration: none;
+    color: #223256;
+}
+nav ul li a:hover{
+    color: #3097bc;
+}
+/*--======== Blog-art2 ==========--*/
+.blog-heading{
+    padding: 40px 0 50px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+#blog-heading{
+    padding: 20px 0 20px;
+    text-align: center;
+    font-size: 1.25rem;
+    color: #606163;
+}
+.main_blog_img{
+    object-fit: cover;
+    flex: none;
+    border-radius: 8px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: 100px;
+
+
+}
+.wrapper-blog{
+    outline-offset: 0px;
+    background-color: transparent;
+    outline: 0 #4c4551;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;
+    align-self: auto;
+    align-items: center;
+    width: 100%;
+    max-width: 1590px;
+    margin-bottom: 9px;
+    padding-bottom: 32px;
+    padding-left: 6%;
+    padding-right: 6%;
+    transition: opacity .2s;
+    display: flex;
+    position: relative;
+}
+.blog-content-script{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-container-img{
+    margin-bottom: auto;
+    padding-left: 140px;
+    padding-top: 130px;
+
+}
+
+.poster-authore{
+    border: 1px solid rgba(0,0,0,0.2);
+    text-align: center;
+    border-radius: 8px;
+    flex-direction: column;
+    flex: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    margin-bottom: auto;
+    margin-right: 54px;
+    padding: 40px 40px 80px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+.poster-authore img{
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+    margin-bottom: 16px;
+}
+.social-icon-blog {
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+.social-icon-blog a{
+    font-size: 30px;
+    color: #223256;
+    margin-right: 20px;
+}
+.social-icon-blog a:hover{
+    color: #3097bc;
+}
+.right-container-txt{
+    width: 100%;
+}
+.post_blog{
+    align-items: flex-start;
+    display: flex;
+    width: 100%;
+}
+.post_blog_content{
+    width: 75%;
+    border-radius: 8px;
+    flex: 1;
+    line-height: 1.5em;
+}
+.post_blog_content p{
+    font-size: 1.2rem;
+}
+.post_blog_content h2{
+    font-weight: bolder;
+    font-size: 1.6rem;
+}
+span{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.post_blog_content ol,ul,li{
+    font-size: 1.1rem;
+    list-style-type: disc;
+}
+.post_blog_content figcaption{
+    text-align: center;
+}
+.all-img{
+    width: 600px;
+    padding: 0 18% 0;
+    
+}
+.image_centering{
+    width: 100%;
+    height: 457px;
+    margin: auto;
+    display: block
+}
+
+.post_blog_content h4{
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 1.7em;
+    font-weight: 900;
+}
+
+
+/*------------ Footer -----------------*/
+footer{
+            width: 100%;
+            text-align: center;
+            padding:30px 0;
+            opacity: 0.4;
+        
+        }
+        footer h4{
+            margin-bottom: 25px;
+            margin-top: 600;
+        }
+        footer p{
+            font-size: 1.1rem;
+        }
+        /*.icon .fa-brands{
+            color:#f44336;
+            margin:0 13px;         I am going to change this later
+            cursor: pointer;
+            padding:18px 0;
+        }*/
+        .fa-heart{
+            color:#f44336;
+        }
+        /*-------========= Audio section ==========--------*/
+        .audio-container{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .right-audio{
+            padding-top: 50px;
+            justify-self: center;
+            margin-left: 40%;
+            
+        }
+    </style>
+
+    <title>Blog</title>
+</head>
+<body>
+    <main>
+        <header class="sub-header-blog">
+            <nav>
+                <img class="logo" src="images/logo nav txt.png"  alt="image">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+
+             <!--====== Blog section ========-->
+    <section class="blog">
+        <div class="wrapper-blog">
+            <div class="blog-heading">
+                <h3>What are Educational Games?</h3>
+                <span id="blog-heading">Posted on May 3, 2021</span>
+            </div> 
+            <div class="main_blog_img">
+                <img src="images/Blog-main-article2.png" alt="images" >
+            </div>
+            <div class="audio-container">
+                <div class="right-audio">
+                    <div class="audio-wrap">
+                        <audio controls autoplay style="width: 500px;">
+                            <source src="audio/audio.wav">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="blog-content-script">
+                <div class="left-container-img">
+                    <div class="poster-authore">
+                        <img src="images/authore-image.jpeg" alt="authore images">
+                        <div class="authore-post-name">
+                            <h2>Nico King</h2>
+                            <div class="social-icon-blog">
+                                <a href="https://twitter.com/"><i class="fa-brands fa-square-x-twitter"></i></a>
+                                <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-container-txt">
+                    <div class="post_blog">
+                        <div class="post_blog_content">
+                            <br>
+                            <br>
+                            <h4>From Guess Who? to Minecraft, it’s not unusual to see games in lessons.
+                                 Games have <br> always been used in classrooms to simplify concepts and allow for practical experience. <br>
+                                  Educational games continue to evolve with digital gaming.
+                            </h4>
+                            <p>In this article:</p>
+                            <br>
+                            <ul>
+                                <li>I’ll answer the question ‘what are educational games’</li>
+                                <li>Provide a brief history of their use</li>
+                                <li>Offer 6 benefits to serious games in education</li>
+                                <li>List 5 top educational games for kids</li>
+                            </ul>
+                            <p>&zwj;
+                            <br>
+                            </p>
+                            <h1>What are educational games?</h1><br>
+                            <p>This is a common question with a deceptively simple answer.</p><br>
+                            <h5>Educational games are those designed to teach people about a specific subject or a specific skill.</h5> <br>
+                            <p>They are made predominantly for kids and students of all ages, and can be used both inside the classroom and out. Educational games are a subset of serious gaming.<br></p> <br>
+                            <p>One important difference is between educational games and game-based learning.<br></p> <br>
+                            <p><strong>Game-based learning</strong> is the act of learning information or skills through a game. It can occur in almost any game, whether serious or not. An example of this might be chess teaching logic and strategy skills.<br></p> <br>
+                            <p><strong>Educational games</strong> have been developed with specific learning outcomes in mind. Game-based learning occurs in educational games, making educational games an umbrella term for both the act of learning and the method of education.<br></p><br>
+                            <h2><strong>A compact history of educational games</strong><br></h2><br>
+                            <p>Educational games have been an area of interest since the first computers. Here is a brief overview of key moments in the history of educational games:<br></p><br>
+                            <ol>
+                                <li><span>1970s</span>
+                                    <ul>
+                                        <li><strong>1971:</strong> One of the first educational games is released by MECC. Oregon Trail provided a history lesson of American pioneers in the 1800s.</li>
+                                        <li><strong>1977:</strong> The Apple II is released which offered gameplay on floppy disks. Apple proactively pursued the education market by selling the computers to schools.</li>
+                                    </ul><br>
+                                </li>
+                                <li> <span>1980s</span>
+                                    <ul>
+                                        <li><strong>1982:</strong> To compete with the Apple II, rival computer company Comodore releases the Comodore 64. It soon became a staple in school computer labs.</li>
+                                        <li><strong>1985+:</strong> Multiple popular educational games are released, some which are still around today. These included: Where in the World is Carmen Sandiego (1985), Reader Rabbit (1986) and Math Blaster (1987).</li>
+                                    </ul><br>
+                                </li>
+                                <li><span>1990s </span>
+                                    <ul>
+                                        <li><strong>1991:</strong> The launch of the internet brings educational games online and to the masses</li>
+                                        <li><strong>1999+:</strong> Whyville is the first educational game to successfully implement virtual world simulations, including a virtual currency.</li>
+                                    </ul> <br><br>
+                                </li>
+                                <figure>
+                                    <div class="image_centering">
+                                        <img class="all-img" src="images/figure 1.jpg" alt="images">
+                                    </div>
+                                    <figcaption>Whyville: The first educational game to implement a<br> social virtual world, Whyville explores science and<br> citizenship.</figcaption>
+                                </figure>
+                                <br>
+                                <li> <span>2000s</span>
+                                    <ul>
+                                        <li><strong>2003:</strong> A kid-friendly programming language, Scratch, is released which encourages young learners to program their own games.</li>
+                                        <li><strong>2006-2008:</strong> Educational gaming goes mainstream with Nintendo Wii’s Big Brain Academy (2006) and PS3’s Little Big Planet (2008).</li>
+                                    </ul><br>
+                                </li>
+                                <li><span>2010s</span>
+                                    <ul>
+                                        <li><strong>2011:</strong><strong>Minecraft</strong> is released by developers at Sandbox. It quickly gains popularity for its game-based learning potential and within a few years, an official <a href="#">education edition</a> is released.</li>
+                                        <li><strong>2014:</strong> The first ever Australian STEM Video Game Challenge. Participants are tasked with building, designing and testing an original video game. The challenge is designed to enhance kids’ STEM skills. </li>
+                                    </ul><br>
+                                </li>
+                            </ol>
+                            <br>
+                            <p>As we enter a new decade, educational games show no signs of slowing down. According to IGEA’s Digital Australia 2020 report, over half of schools (52%) currently use video games in their curriculum. STEM education is driving the trend with 61% of teachers agreeing games are beneficial in these lessons. Plus, a quarter of schools (26%) are teaching game development as part of their curriculum.</p>
+                            <br><br>
+                            <h1><strong>The benefits of educational games</strong></h1>
+                            <br><br>
+                            <p>Fun is the obvious reason to use educational games in the classroom. But aside from this, there are many more benefits to serious games in education. Here are 6 important reasons for using game-based learning in education.</p>
+                            <br>
+                            <br>
+                            <h2>Teach soft skills</h2>
+                            <br>
+                            <p>While STEM and language skills are curriculum essentials, schools should also be focused on giving kids soft skills. Creative problem solving, critical thinking, leadership and collaboration are the kind of development skills many employers are looking for. Educational games are excellent at building these skills, alongside essential curriculum. <br></p>
+                            <br><br>
+                            <h2>Provide real-time feedback</h2>
+                            <br><br>
+                            <p>Educational games reinforce knowledge throughout the learning journey, as opposed to at the end of a course like traditional testing. With the ability to try again, making mistakes becomes part of the journey rather than a stressful failure. This helps increase kids’ self-esteem through positive reinforcement of their achievements and the ability to try again. <br></p>
+                            <br><br>
+                            <h2>Adaptive learning</h2>
+                            <br><br>
+                            <p>Adaptive learning provides a personalised learning experience. Using AI and similar methods, video games can respond to a user’s actions. A simple example would be difficulty levels. If a player is breezing through the tasks or struggling to complete a level, adaptive learning may raise or lower the difficulty to meet the player’s needs. This helps students develop skills at the pace which suits them best. <br></p>
+                            <br><br>
+                            <figure>
+                                <div class="image_centering">
+                                    <img class="all-img" src="images/figure 2.png" alt="figure_2">
+                                </div>
+                                
+                                <figcaption>Traditional Learning vs. Adaptive Learning: How Instructors and Students can benefit <br> from Adaptive Technology. Source: https://www.d2l.com/en-apac/blog/robots-future-education/</figcaption>
+                        
+                            </figure>
+                            <br>
+                            <h2>Increased student engagement <br></h2>
+                            <p>Educational games provide a hands-on approach to learning. They’re designed to be engaging and to motivate students to keep going. Plus, when students enjoy their learning experience they are more likely to continue it outside the classroom. <br></p><br>
+                            <h2>Better retention <br></h2><br>
+                            <p>When students are active participants in their learning, they have better retention. This is based on the concept of experiential learning (or learning through experience). Students aren’t just memorising or thinking about new concepts – they are trying them out. This helps establish new habits and behaviours. <br></p><br>
+                            <h2>Make big topics easier for kids <br></h2><br>
+                            <p>Our world is full of complex, confronting issues. Take climate change as an example. It’s a very real problem which many kids find overwhelming. Through educational games, like Chaos Theory’s <a href="https://www.chaostheorygames.com/work/working-with-water">Working with Water</a> , game developers can make large issues more accessible. <br></p> <br>
+                             
+                            <h1>5 of the best educational games for kids</h1> <br>
+                            <p>The educational games market is full of exciting releases in the past decade.  Here are 5 educational games that inspire me:</p> <br>
+                            <h2>Lightbot</h2> <br>
+                            <p><a href="https://lightbot.com/index.html">Lightbot</a> is an app game – playable on iOS, Android and Amazon – designed for first-time coders. It uses puzzles based on coding to teach kids programming logic as they play. It’s suitable for all-ages and has been played over 20 million times.</p> <br>
+                            <h2>Mass Mutations</h2> <br>
+                            <p><a href="https://www.chaostheorygames.com/work/mass-mutations">Mass Mutations</a>, by Chaos Theory, helps kids keep up with their STEM learning on school holidays (or any time of year). Players have to answer STEM-based questions to defeat the mutant plants and restore order to their town. It was based on the Australian curriculum originally, but proved so popular that a US version was released soon after.</p><br><br>
+                            <figure>
+                                <div class="image_centering">
+                                    <img class="all-img" src="images/figure 3.jpg" alt="image">
+                                    <figcaption>Mass Mutations is a keystone game in STEM Explorer, an elearning app <br> that uses gamification to minimize holiday learning loss</figcaption>
+                                </div>
+                            </figure>
+                            <br> <br>
+                            <h2>Math Blaster</h2> <br>
+                            <p>An educational gaming original, <a href="http://www.mathblaster.com/parents/math-games">Math Blaster</a>, is still going strong. They have moved gameplay online with math games available for preschool through to grade 6. Both parents and teachers find it easy to motivate kids to enjoy math with these games.</p><br>
+                            <br>
+
+
+                            <!----- put the iframe here ----------->
+                            <iframe src="reply.html" width="100%" height="700px" title="comment section" frameborder="0"></iframe>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+ 
+    </section>
+           
+    <footer>
+        <h4>About Us</h4>
+        <p>Brain Byte is a tech company that makes AI systems and machine learning algorithms.<br>
+            They started in 2024 and have become well-known for their excellent work.
+            Brain Byte's goal is to make technology easy and helpful for everyone.<br>
+            They want their solutions to be easy to use and make a big difference in people's lives.
+        </p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+        <p>Made with <i class="fa-regular fa-heart"></i> For Ms.Sara Al Ruzeiqi</p>
+    </footer>
+    </main>
+</body>
+</html>

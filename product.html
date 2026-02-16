@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <title>Product</title>
+</head>
+<body>
+    <main>
+        <header class="sub-header-blog">
+            <nav>
+                <img class="logo" src="images/logo nav txt.png"  alt="image">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+
+             <!--====== Product section ========-->
+    <section class="product">
+        <div class="product-heading">
+             <h1>Our Product</h1>
+        </div> 
+            <!--========== Product-container ===========-->
+            <div class="wrapper">
+                <div id="search-container">
+                  <input
+                    type="search"
+                    id="search-input"
+                    placeholder="Search product name here.."
+                  />
+                  <button id="search">Search</button>
+                </div>
+                <div id="buttons">
+                  <button class="button-value" onclick="filterProduct('all')">All</button>
+                  <button class="button-value" onclick="filterProduct('SmartCubes')">
+                    SmartCubes
+                  </button>
+                  <button class="button-value" onclick="filterProduct('FlagShip')">
+                    FlagShip
+                  </button>
+                  <button class="button-value" onclick="filterProduct('MarkAliens')">
+                    MarkAliens
+                  </button>
+                  <button class="button-value" onclick="filterProduct('LimitedEdition')">
+                    LimitedEdition
+                  </button>
+                </div>
+                <div id="products"></div>
+              </div>
+              <!-- Script -->
+              <script src="script.js"></script>
+     </section>
+           
+    <footer>
+        <h4>About Us</h4>
+        <p>Brain Byte is a tech company that makes AI systems and machine learning algorithms.<br>
+            They started in 2024 and have become well-known for their excellent work.
+            Brain Byte's goal is to make technology easy and helpful for everyone.<br>
+            They want their solutions to be easy to use and make a big difference in people's lives.
+        </p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+        <p>Made with <i class="fa-regular fa-heart"></i> For Ms.Sara Al Ruzeiqi</p>
+    </footer>
+    </main>
+</body>
+</html>

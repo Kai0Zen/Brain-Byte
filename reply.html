@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reply ifreame</title>
+    <style>
+        /*--------========== Forms ============-------------*/
+#comment-note{
+    font-weight: bold;
+}
+p{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+span{
+    color: red;
+}
+#comment-head{
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+#text-area-styling{
+    box-shadow: 0 0 0.3 rgba(0,0,0,0.2);
+}
+
+#name-user{
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+#email{
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+#submit{
+    border-radius: 5px;
+    padding:9px 20px 8px;
+    border: none;
+    background-color: red;
+    color: #fff;
+    transition: 0.3s;
+}
+#submit:hover{
+    background-color: #fff;
+    color: red;
+}
+    </style>
+</head>
+<body>
+    <form action="#">
+        <h2>Leave a Reply:</h2><br><br>
+        <p id="comment-note">Your email address will not be published. Required fields are marked</p><br>
+        <label id="comment-head" for="comment">Comment: <span>*</span></label><br>
+        <textarea name="comment" id="text-area-styling" cols="45" rows="8" maxlength="65525" required></textarea><br><br>
+        <label for="name" id="name-user">Name: <span>*</span></label><br>
+        <input type="text" name="name" id="name-user" value size="30" maxlength="245" required> <br><br>
+        <label for="email" id="email">Email: <span>*</span></label><br>
+        <input type="text" id="email" value size="30" maxlength="100" required><br><br>
+        <input type="submit" value="Post it" id="submit">
+     </form>
+</body>
+</html>
